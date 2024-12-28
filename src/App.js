@@ -8,22 +8,15 @@ import Admissions from './components/admissions';
 import Applications from './components/applications';
 import Gallery from './components/gallery';
 import NoPage from './components/noPage';
-import CreateAccount from './components/createAccount';
 import './App.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import HeaderSlideshow from './components/slideShow';
 import Footer from './components/footer';
-import LoginButton from './components/loginButton';
-import Login from './components/loginPage';
-import Dashboard from './components/dashboard';
-import CreateAccountButton from './components/createAccountButton';
 import Events from './components/events';
 
 function App() {
-  const isLoggedIn = !!localStorage.getItem('access_token'); // Check if user is logged in
   const location = useLocation();
-  console.log('Current path:', location.pathname); // Log the current path
   const isDashboardPage = location.pathname === '/dashboard';
 
   return (
@@ -31,13 +24,17 @@ function App() {
       {!isDashboardPage && (
         <>
           <header className="App-header">
-            <NavBar/>
+            <NavBar />
             <HeaderSlideshow />
             <div className="header-content">
               <div className="header-flex-container">
                 <p className="innerman-school">INNERMAN PRE & PRIMARY SCHOOL</p>
-                <CreateAccountButton className="create-account-button" />
-                <LoginButton className="login-button" />
+                <button
+                  className="apply-button"
+                  onClick={() => window.location.assign('/applications')}
+                >
+                  Apply Now
+                </button>
               </div>
             </div>
           </header>
@@ -49,15 +46,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admissions" element={<Admissions />} />
-          <Route path="/login" element={<Login />} />
-          {isLoggedIn ? (
-            <>
-              <Route path="/applications" element={<Applications />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-            </>
-          ) : null}
+          <Route path="/applications" element={<Applications />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/createAccount" element={<CreateAccount />} />
           <Route path="/events" element={<Events />} />
           <Route path="*" element={<NoPage />} />
         </Routes>

@@ -1,24 +1,22 @@
-
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background-color: rgb(6, 133, 207); */
   padding: 30px;
 }
 
 .content-wrapper {
-  max-width: 500px;
+  max-width: 90%; /* Further increased width of the container */
   background: white;  
-  padding: 30px;
-  border-radius: 10px;
+  padding: 40px; /* Increased padding for more space */
+  border-radius: 60px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .page-title {
-  font-size: 32px;
+  font-size: 36px; /* Increased font size for page title */
   margin-bottom: 30px;
   color: #333;
 }
@@ -28,13 +26,13 @@
 }
 
 .title {
-  font-size: 26px;
+  font-size: 30px; /* Increased font size for section titles */
   margin-bottom: 15px;
   color: #555;
 }
 
 .text {
-  font-size: 18px;
+  font-size: 20px; /* Increased font size for text */
   color: #666;
 }
 
@@ -46,13 +44,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px; /* Increased font size for values list */
   color: #666;
   text-align: left;
 }
 
 .values-list li {
-  margin: 10px 0;
+  margin: 12px 0; /* Increased space between list items */
   position: relative;
 }
 

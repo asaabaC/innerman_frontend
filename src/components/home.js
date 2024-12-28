@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
-import AchievementImage from '../images/background3.jpg';
-import FacilitiesImage from '../images/background5.jpg';
+import AchievementImage from '../images/image5.jpg';
+import FacilitiesImage from '../images/image6.jpg';
 import CommunityImage from '../images/image7.jpg';
+
 
 const Home = () => {
   return (

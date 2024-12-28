@@ -2,16 +2,17 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  /* Removed background image */
   background-color: #f0f8ff; /* Light blue background */
   color: #333;
 }
 
 .hero {
-  /* background: url('../images/school.jpg') no-repeat center center/cover; Adjust path */
-  color: white;
   text-align: center;
   padding: 80px 20px;
-  border-bottom: 4px solid #007bff;
+  background-color: #fff; /* Plain white background */
+  margin-bottom: 20px; /* Add spacing below the section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .hero h1 {
@@ -26,15 +27,12 @@ body {
   color: #333;
 }
 
-.apply-button:hover {
-  background-color: #0056b3;
-}
-
 .testimonials {
   background-color: #f8f9fa;
   padding: 40px 20px;
   text-align: center;
-  border-top: 4px solid #007bff;
+  margin-bottom: 20px; /* Add spacing below the section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .testimonials h2 {
@@ -63,7 +61,9 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #fff; /* Plain white background */
+  margin-bottom: 20px; /* Add spacing below the section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .highlight {
@@ -98,7 +98,8 @@ body {
   text-align: center;
   padding: 20px;
   background-color: #f8f9fa;
-  border-top: 4px solid #007bff;
+  margin-bottom: 20px; /* Add spacing below the section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .events-link {
